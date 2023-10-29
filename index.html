@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      
+        <!-- HEADING -->
+        <div class="heading row">
+          <h1 class="col-6">Mordern Warfare Survey</h1>
+          <img
+            class="warfare-img col-4"
+            src="assets/img.jpg"
+            alt="warfare-img"
+          />
+        </div>
+        <hr />
+        <ol>
+          <!-- Personal Questions -->
+          <div class="personal-questions">
+            <h2>
+              <li>Personal Questions:</li>
+            </h2>
+            <ul class="question">
+              <li>
+                <h3>Please fill all the details</h3>
+                <!-- Name -->
+                <ul type="none">
+                  <li class="personal-ul">
+                    <form class="form-floating" id="survey-form">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Aashish Kumar"
+                      />
+                      <label for="name-label">Enter your full name</label>
+                    </form>
+                  </li>
+                  <li class="personal-ul">
+                    <!-- Email -->
+                    <form class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="name@example.com"
+                      />
+                      <label for="email-label">Enter your email</label>
+                    </form>
+                  </li>
+                  <li class="personal-ul">
+                    <!-- Age -->
+                    <form class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="age"
+                        placeholder="19"
+                      />
+                      <label for="age-label">Enter your age</label>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- General Questions -->
+          <div class="general-questions">
+            <h2><li>General Questions:</li></h2>
+            <ul class="question">
+              <!-- Questions 1 -->
+
+              <li>
+                <h3>
+                  How interested are you in topics related to modern warfare?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question1"
+                        id="question1"
+                        value="very"
+                        class="form-check-input"
+                      />
+                      <label for="option">Very interested</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question1"
+                        id="question1"
+                        value="somewhat"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Somewhat interested</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question1"
+                        id="question1"
+                        value="not"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Not interested</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+
+              <!-- Questions 2 -->
+
+              <li>
+                <h3>
+                  Do you have a military background or experience in modern
+                  warfare?
+                </h3>
+
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question2"
+                        id="question2"
+                        value="yes"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Yes</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question2"
+                        id="question2"
+                        value="no"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Warfare Technology -->
+          <div class="warfare-technology">
+            <h2><li>Warfare Technology:</li></h2>
+            <ul class="question">
+              <!-- Questions 3 -->
+              <li>
+                <h3>
+                  Which modern warfare technology do you find most fascinating
+                  or concerning?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question3"
+                        id="question3"
+                        value="drones"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Drones</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question3"
+                        id="question3"
+                        value="cyber"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Cyber warfare</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question3"
+                        id="question3"
+                        value="artificial"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Artificial intelligence in warfare</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question3"
+                        id="question3"
+                        value="weapons"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Autonomous weapons (e.g., robots, drones)</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question3"
+                        id="question3"
+                        value="missiles"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Advanced missiles and weaponry</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question3"
+                        id="question3"
+                        value="other"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Other</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+
+              <!-- Questions 4 -->
+              <li>
+                <h3>
+                  Do you think modern warfare technology has changed the nature
+                  of conflicts?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question4"
+                        id="question4"
+                        value="yes"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Yes</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question4"
+                        id="question4"
+                        value="no"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No </label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question4"
+                        id="question4"
+                        value="notSure"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No sure</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Global Conflicts -->
+          <div class="global-conflicts">
+            <h2><li>Global Conflicts:</li></h2>
+            <ul class="question">
+              <!-- Questions 5 -->
+
+              <li>
+                <h3>
+                  Which recent global conflicts or geopolitical situations
+                  concern you the most?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question5"
+                        id="question5"
+                        value="middleEast"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Middle East conflicts</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question5"
+                        id="question5"
+                        value="cyber"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Cybersecurity threats</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question5"
+                        id="question5"
+                        value="territorial"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Territorial disputes (e.g., South China Sea)</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question5"
+                        id="question5"
+                        value="northKorea"
+                        class="form-check-input"
+                      />
+                      <label for="option"> North Korea's nuclear program</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question5"
+                        id="question5"
+                        value="terrorismCounterTerrorism"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Terrorism and counterterrorism efforts</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question5"
+                        id="question5"
+                        value="other"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Other</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Ethical and Moral Concerns -->
+          <div class="ethical-and-moral-concerns">
+            <h2><li>Ethical and Moral Concerns:</li></h2>
+            <ul class="question">
+              <!-- Questions 6 -->
+
+              <li>
+                <h3>
+                  How interested are you in topics related to modern warfare?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question6"
+                        id="question6"
+                        value="yes"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Yes</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question6"
+                        id="question6"
+                        value="no"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question6"
+                        id="question6"
+                        value="not"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Not sure</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+
+              <!-- Questions 7 -->
+
+              <li>
+                <h3>
+                  Should there be international agreements to regulate the use
+                  of certain technologies in warfare (e.g., banning autonomous
+                  weapons)?
+                </h3>
+
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question7"
+                        id="question7"
+                        value="yes"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Yes</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question7"
+                        id="question7"
+                        value="no"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question7"
+                        id="question7"
+                        value="notSure"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Not sure</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--  Future Trends -->
+          <div class="future-trends">
+            <h2><li>Future Trends:</li></h2>
+            <ul class="question">
+              <!-- Questions 8 -->
+
+              <li>
+                <h3>
+                  What do you think will be the most significant trend in modern
+                  warfare in the next decade?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question8"
+                        id="question8"
+                        value="ai"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Increased use of artificial intelligence</label
+                      >
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question8"
+                        id="question8"
+                        value="cyber"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Cyber warfare becoming more prevalent</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question8"
+                        id="question8"
+                        value="military"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Shifts in military alliances</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question8"
+                        id="question8"
+                        value="climate"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Climate change and resource-based conflicts</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question8"
+                        id="question8"
+                        value="other"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Other</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+
+              <!-- Questions 9 -->
+
+              <li>
+                <h3>
+                  Are you optimistic or pessimistic about the future of modern
+                  warfare?
+                </h3>
+
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question9"
+                        id="question9"
+                        value="optimistic"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Optimistic</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question9"
+                        id="question9"
+                        value="pessimistic"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Pessimistic</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question9"
+                        id="question9"
+                        value="netural"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Neutral</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Media and Information -->
+          <div class="media-and-information">
+            <h2><li>Media and Information:</li></h2>
+            <ul class="question">
+              <!-- Questions 10 -->
+
+              <li>
+                <h3>
+                  How do you usually stay informed about modern warfare and
+                  conflicts?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question10"
+                        id="question10"
+                        value="news"
+                        class="form-check-input"
+                      />
+                      <label for="option"> News websites</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question10"
+                        id="question10"
+                        value="tv"
+                        class="form-check-input"
+                      />
+                      <label for="option"> TV news</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question10"
+                        id="question10"
+                        value="socialMedia"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Social media</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question10"
+                        id="question10"
+                        value="military"
+                        class="form-check-input"
+                      />
+                      <label for="option">
+                        Military and defense publications</label
+                      >
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question10"
+                        id="question10"
+                        value="other"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Other</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+
+              <!-- Questions 11 -->
+
+              <li>
+                <h3>
+                  Do you think media coverage of modern warfare is accurate and
+                  unbiased?
+                </h3>
+
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question11"
+                        id="question11"
+                        value="yes"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Yes</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question11"
+                        id="question11"
+                        value="no"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question11"
+                        id="question11"
+                        value="notSure"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Not sure</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--  Personal Involvement -->
+          <div class="personal-involvement">
+            <h2><li>Personal Involvement:</li></h2>
+            <ul class="question">
+              <!-- Questions 12 -->
+
+              <li>
+                <h3>
+                  Have you ever participated in discussions or actions related
+                  to modern warfare issues, such as activism or volunteering?
+                </h3>
+                <ul type="none">
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question12"
+                        id="question12"
+                        value="yes"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Yes</label>
+                    </li>
+                  </h4>
+
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question12"
+                        id="question12"
+                        value="no"
+                        class="form-check-input"
+                      />
+                      <label for="option"> No</label>
+                    </li>
+                  </h4>
+                  <h4>
+                    <li>
+                      <input
+                        type="radio"
+                        name="question12"
+                        id="question12"
+                        value="planning"
+                        class="form-check-input"
+                      />
+                      <label for="option"> Planning to in the future</label>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+
+              <!-- Questions 13 -->
+
+              <li>
+                <h3>
+                  If yes, please briefly describe your involvement or
+                  activities.
+                </h3>
+
+                <ul type="none">
+                  <h4>
+                    <li class="form-floating">
+                      <textarea
+                        class="form-control"
+                        name="question13"
+                        id="question13"
+                        placeholder="Please specify here..."
+                        cols="30"
+                        rows="2"
+                      ></textarea>
+                    </li>
+                  </h4>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </ol>
+     
+      <a href="#" class="btn btn-primary btn-lg" id="submit-button">Submit</a>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
